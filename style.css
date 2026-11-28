@@ -26,7 +26,7 @@ button{
     font-weight: bold;
     border-radius: 8px;
     padding:10px 20px;
-    cursor: pointer;
+    cursor:pointer;
 }
 
 .topbar{
@@ -65,15 +65,12 @@ letter-spacing: 3px;
 }
 nav{
     display: flex;
-    gap: 20px;
-    
+    gap: 20px;   
 }
-
 nav a{
     color:beige;
     font-size: 13px;
     text-decoration: none;
-
 }
 nav a:hover{
     color: blue;
@@ -87,7 +84,7 @@ nav a:hover{
    font-size: 11px;
 }
 #clock{
-    color: white;
+    color: rgb(224, 214, 214);
     font-family: monospace;
     margin-left: 10px;
 }
@@ -97,4 +94,56 @@ nav a:hover{
     height: 9px;
     border-radius: 50%;
     background: rgb(214, 13, 46);
+}
+/* Main page */
+.page{
+    padding: 35px 5%;
+    color: aliceblue;
+}
+
+/* This is for whereever <p> tag coms this color wil be applied */
+.page p{
+color: rgb(130, 86, 86);
+}
+
+.kpi-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.kpi-card{
+    background: black;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 22px;
+    transition: 0.2s;
+}
+
+/* card hover animation */
+
+.kpi-card:hover{
+    border-color: blue;
+    transform: translateY(-3px);
+}
+
+/* kpi card heading labels */
+
+.kpi-card span{
+    color: brown;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* KPI numerical values */
+.kpi-card h1{
+    color: blanchedalmond;
+    font-size: 29px;
+    margin: 14px 0 8px;
+}
+
+.kpi-card p{
+    color: rgb(148, 134, 196);
+    font-size: 12px;
 }

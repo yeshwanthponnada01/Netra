@@ -6,28 +6,72 @@
     <title>NETRA</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="topbar">
+
     <div class="brand">
-        <div class="brand-logo"><h3>N</h3></div>
-            <div>
-                <h1>NETRA</h1>
-                <p>ROBOT MISSION CONTROL</p>
-            </div>
+        <div class="brand-logo">
+            <h3>N</h3>
+        </div>
+
+        <div>
+            <h1>NETRA</h1>
+            <p>ROBOT MISSION CONTROL</p>
+        </div>
     </div>
-                <nav class="navigation">
-                    <a href="#Dashboard">Dashboard</a>
-                    <a href="#Fleet">Fleet</a>
-                    <a href="#Telemetry">Telemetry</a>
-                    <a href="#Alerts">Alerts</a>
-                </nav>
-                <div class="header-right">
-                    <span class="online-dot"></span>
-                    <span>SYSTEM ONLINE</span>
-                    <strong id="clock">--:--:--</strong>
-                </div>
-    <button id="dispatch-open" type="button">Dispatch Mission</button>
+
+    <nav class="navigation">
+        <a href="#Dashboard">Dashboard</a>
+        <a href="#Fleet">Fleet</a>
+        <a href="#Telemetry">Telemetry</a>
+        <a href="#Alerts">Alerts</a>
+    </nav>
+
+    <div class="header-right">
+        <span class="online-dot"></span>
+        <span>SYSTEM ONLINE</span>
+        <strong id="clock">--:--:--</strong>
+    </div>
+
+    <button id="dispatch-open" type="button">
+        Dispatch Mission
+    </button>
+
 </header>
+<!-- Tis is main section -->
+<main class="page">
+    <section class="kpi-grid">
+    <article class="kpi-card">
+        <span>ROVERS ONLINE</span>
+        <h1 id="online-count">6/6</h1>
+        <p>Active Rovers Units</p>
+
+    </article>
+    <article class="kpi-card">
+        <span>AVERAGE BATTERY</span>
+        <h1 id="Average-battery">52%</h1>
+        <p>Fleet battery level</p>
+
+    </article>
+
+    <article class="kpi-card">
+        <span>OPEN ALERTS</span>
+        <h1 id="Open-Alerts">1</h1>
+        <p>Requirs Attensions</p>
+
+    </article>
+    
+    <article class="kpi-card">
+        <span>DISTANCE TODAY</span>
+        <h1 id="Distance-today">13.6 KM</h1>
+        <p>Total Simulated distance</p>
+
+    </article>
+    </section>
+</main>
+<script src="script.js"></script>
+
 </body>
 </html>
